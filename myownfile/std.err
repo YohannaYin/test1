@@ -1,0 +1,4 @@
+enter any character
+stream = stdin, fully buffered, buffer size = 8192
+stream = stdout, fully buffered, buffer size = 8192
+stream = stderr, unbuffered, buffer size = 8192
