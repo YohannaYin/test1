@@ -1,3 +1,4 @@
+
 /*************************************************************************
     > File Name: pic8_1.c
     > Author: YinHong
@@ -25,9 +26,11 @@ int main(void)
 	if((pid = fork())<0)
 	{
 		err_sys("fork error");
+
 	}
 	else
 		if(pid == 0)
+
 		{
 			globvar++;
 			var++;
@@ -37,5 +40,5 @@ int main(void)
 			sleep(2);
 		}
 	printf("pid = %ld,glob = %d,var = %d\n",(long)getpid(),globvar,var);
-	_exit;
+	_exit(0);
 }

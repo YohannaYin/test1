@@ -20,7 +20,7 @@ int main(int argc,char *argv[])
 {
 	int opt;
 	int i;
-	while((opt=getopt(argc,argv,"s"))!=-1)
+	while((opt=getopt(argc,argv,"s:"))!=-1)
 	{
 		switch(opt){
 			case 's':file_size=atoi(optarg);

@@ -32,9 +32,11 @@ int main(void)
 			var++;
 		}
 		else 
+
 		{
-			sleep(2);
+			sleep(2);	
 		}
 	printf("pid = %ld,glob = %d,var = %d\n",(long)getpid(),globvar,var);
 	exit(0);
+
 }
